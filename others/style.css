@@ -1,0 +1,320 @@
+/*--------All import link-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: raleway;
+}
+
+/*-----------Color-----------*/
+:root{
+    --blue:#00AFEB;
+    --lightblue:#E0EDF1;
+    --white:#ffffff;
+    --black:#222222;
+    --gray:#E1E6E9;
+    --darkgray:#D9D9D9;
+}
+
+/*-------Utility----------*/
+#active{
+    background-color: var(--blue);
+}
+#active a{
+    color: var(--white);
+}
+body{
+    background-color: var(--gray);
+}
+body div{
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 10px 30px 0 rgba(0, 0, 0, 0.12);
+    transition: 250ms ease-in-out;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/*------------Navbar Design--------------*/
+.nav{
+    display: flex;
+    padding: 2.5vh 7.5vw;
+    background-color: var(--lightblue);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 .25px .5px 0 rgba(0, 0, 0, 0.03), 0 3px 10px 0 rgba(0, 0, 0, 0.04);
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    width: 85%;
+}
+/*-----LOGO-------*/
+.nav .nav-left{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.nav .nav-left p{
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+
+/*---------Menu--------*/
+.nav .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1vw;
+}
+
+.nav .nav-right p{
+    cursor: pointer;
+}
+.nav .nav-right a{
+    color: var(--black);
+}
+.nav .nav-right .fa-bars{
+    display: none;
+}
+.nav .nav-right button{
+    border: none;
+    padding: 1.75vh 2vw;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .1vw;
+    border-radius: 4px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+.nav .nav-right button a{
+    color: var(--white);
+}
+.connect-btn a{
+    color: var(--white);
+}
+/*--------Hero section design----------*/
+.hero{
+    margin-top: 20vh;
+    text-align: center;
+}
+.hero .hero-text .large{
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: var(--black);
+}
+.hero .hero-text .small{
+    margin: 1vh 0;
+}
+/*--------------search items---------*/
+.hero .search{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 0vw 0vh 5vw;
+    background-color: var(--white);
+    margin: 3vh 28.5vw;
+    border-radius: 2.5px;
+    align-items: center;
+}
+.hero .search input{
+    text-align: left;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+}
+.hero .search button{
+    padding: 1.75vh 2.5vw;
+    border: none;
+    border-radius: 2.5px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+/*-----------search tag----------*/
+.hero .search-tag{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin: 0 28.5vw 4vh 28.5vw;
+    column-gap:.7vw;
+}
+.hero .search-tag button{
+    padding: 1vh 1.6vw;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--white);
+}
+.hero .search-tag button a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/*-----------ui iteams section design-------------*/
+.ui-items{
+    text-align: center;
+    margin:5vh 7.5vw ;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+}
+.ui-items .items{
+    margin: 0 auto;
+    text-align: center;
+}
+.ui-items .description{
+    display: flex;
+    align-items: center;
+    width: 355px;
+    justify-content: space-between;
+    background-color: var(--lightblue);
+    padding:10px 35px;
+}
+.ui-items .description p{
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.ui-items .description button{
+    padding: 7.5px 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--blue);
+}
+.ui-items .description button a{
+    color: var(--white);
+}
+
+/*------------Load more button design-----------*/
+
+.load-more{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.load-more button{
+    padding: 1.5vh 2vw;
+    border: none;
+    border-radius: 2.5px;
+    background-color: var(--blue);
+}
+.load-more button a{
+    color: var(--white);
+}
+
+/*-----------Subscribe section design-----------*/
+.subscribe{
+    text-align: center;
+    background-color: var(--lightblue);
+    padding: 7.5vh 0;
+}
+.subscribe p{
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1.5vh;
+}
+.subscribe .email{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 0vw 0vh 5vw;
+    background-color: var(--white);
+    margin: 3vh 34vw;
+    border-radius: 2.5px;
+    align-items: center;
+}
+.subscribe .email input{
+    text-align: left;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+}
+.subscribe .email button{
+    padding: 1.75vh 2.5vw;
+    border: none;
+    border-radius: 2.5px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+/*---------Join our community section design--------*/
+.community{
+    margin: 10vh 7.5vw;
+    text-align: center;
+    padding: 0 5vw;
+}
+.community .text{
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 5vh;
+}
+.community .product-type{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5vw;
+}
+.community .product-type .items p{
+    margin: 2.5vh 0;
+}
+.community .product-type .items p a{
+    color: var(--black);
+    font-weight: 800;
+}
+.community .submit-btn button{
+    margin-top: 2.5vh;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--blue );
+    padding: 1.5vh 3vw;
+}
+.community .submit-btn button a{
+    color: var(--white);
+}
+
+/*-----------Associate section design------------*/
+.associate{
+    text-align: center;
+    margin: 0 7.5vw ;
+}
+.associate p{
+    font-size: 1.75rem;
+    color: var(--black);
+    font-weight: 800;
+}
+.associate .all-brand{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+/*--------------------Footer section  design-----------------*/
+.footer{
+    margin-top: 10vh;
+    background-color: var(--lightblue);
+    gap: 5vw;
+    padding: 5vh 7.5vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.footer .all p{
+    margin-bottom: 1vh;
+    font-size: .9rem;
+}
+
+.footer .all .imp{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/*----------Copyright section design---------*/
+.copyright{
+    background-color: var(--lightblue);
+    text-align: center;
+    padding-bottom:5vh;
+}

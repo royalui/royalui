@@ -1,0 +1,202 @@
+:root{
+    --blue:#00AFEB;
+    --lightblue:#E0EDF1;
+    --white:#ffffff;
+    --black:#222222;
+    --gray:#E1E6E9;
+    --darkgray:#D9D9D9;
+}
+@media only screen and (max-width:1500px) {
+ .ui-items{
+    margin: 0 auto;
+ }
+ .load-more{
+    margin-top: 4vh;
+ }
+
+
+}
+@media only screen and (max-width:1300px) {
+    .ui-items{
+        margin: 4vh auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*COmmunity section*/
+    .community .product-type{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5vw;
+    }
+
+    /*Associate section design*/
+    .associate .all-brand{
+        margin-top: 5vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
+    /*Footer section*/
+    .footer{
+        margin-top: 10vh;
+        background-color: var(--lightblue);
+        gap: 5vw;
+        padding: 5vh 7.5vw;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+        /*Email section design*/
+        .subscribe .email{
+            margin: 3vh 30vw;
+        }
+        .subscribe p{
+            padding: 0 5vw;
+        }
+
+                /*---------Search tag design-------------*/
+                .hero .search-tag{
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+                    margin: 0 28.1vw;
+                    gap:.7vw;
+                }
+}
+
+
+/*For 900px */
+@media only screen and (max-width:900px) {
+    .nav .nav-right p,.connect-btn{
+        display: none;
+    }
+    .nav .nav-right .fa-bars{
+        display: block;
+        font-size: 2rem;
+        color: var(--black);
+    }
+    .ui-items{
+        grid-template-columns: 1fr; 
+}
+.ui-items .items .description{
+    margin: 0 auto;
+}
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .ui-items{
+        grid-template-columns: 1fr;
+
+    }
+    /*Search box design*/
+    .hero .search{
+        margin: 3vh 25vw;   
+    }
+
+    /*Email section design*/
+    .subscribe .email{
+        margin: 3vh 15vw;
+    }
+
+        /*COmmunity section*/
+        .community .product-type{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5vw;
+        }
+            /*Associate section design*/
+    .associate .all-brand{
+        margin-top: 5vh;
+        display: grid;
+        gap: 5vh;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+        /*Footer section*/
+        .footer{
+            margin-top: 10vh;
+            gap: 5vw;
+            padding: 5vh 7.5vw;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        /*Header small text*/
+        .hero .hero-text .small{
+            padding: 0 15vw;
+        }
+        /*----------search bar design------------*/
+        .hero .search{
+            margin: 3vh 20vw;
+        }
+
+        /*---------Search tag design-------------*/
+        .hero .search-tag{
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            margin: 0 20vw;
+            gap:2vw;
+        }
+    
+}
+
+
+/*For small mobile size*/
+@media only screen and (max-width:400px) {
+
+    /*---------UI items section------------*/
+
+    .ui-items .items .cover img{
+        width: 93.5%;
+    }
+    .ui-items .description{
+        width: 35vh;
+        padding:10px 20px;
+    }
+
+    /*-----------search bar section----------*/
+    .hero .search{
+        margin: 3vh 6vw;   
+    }
+    .hero .search input{
+        padding: 0;
+    }
+    /*-------------search tag design----------*/
+    .hero .search-tag{
+        grid-template-columns: repeat(4,1fr);
+        margin: 0 10vw 0 10vw;
+        gap:3vw;
+    }
+
+    /*-------------Email section ----------------*/
+    .subscribe .email{
+        margin: 3vh 8vw;
+    }
+    .subscribe .email input{
+        width: 45vw;
+    }
+
+    /*---------------Footer section-------------*/
+    .footer{
+        text-align: center;
+        margin-top: 10vh;
+        gap: 5vw;
+        padding: 5vh 7.5vw;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .community .product-type{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+@media only screen and (max-width:400px) {
+    .ui-items .description{
+        width:auto;
+        padding:10px 20px;
+        margin: 0vh 7.5vw;
+    }
+
+
+}
